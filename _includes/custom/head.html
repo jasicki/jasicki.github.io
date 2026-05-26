@@ -1,13 +1,15 @@
 <style>
   :root {
-    --font-family-main: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    /* Podmieniamy prawdziwe zmienne, których używa Chirpy */
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    --font-mono: "SF Mono", "Menlo", "Monaco", "Consolas", monospace !important;
   }
 
-  body, html {
-    font-family: var(--font-family-main) !important;
+  body, html, p, h1, h2, h3, h4, h5, h6, a, li, span, div {
+    font-family: var(--font-sans) !important;
   }
 
   code, pre, figure.highlight, .highlight *, .rouge-table * {
-    font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace !important;
+    font-family: var(--font-mono) !important;
   }
 </style>
