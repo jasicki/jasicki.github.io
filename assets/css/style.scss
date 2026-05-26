@@ -1,0 +1,16 @@
+---
+---
+
+@import 'main';
+
+:root {
+  --font-family-main: "Comic Sans MS", cursive !important;
+}
+
+body, html, p, h1, h2, h3, h4, h5, h6, a, li, span, div {
+  font-family: "Comic Sans MS", cursive !important;
+}
+
+code, pre, .highlight, .highlight * {
+  font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace !important;
+}
