@@ -1,8 +1,6 @@
 ---
 title: "Hello World – pierwszy post"
 date: 2026-05-26 12:00:00 +0200
-categories: [Blog]
-tags: [test, code, markdown]
 ---
 
 To jest testowy post sprawdzający wygląd czcionek, bloków kodu i tabel. Jeśli wszystko gra – San Francisco na macOS wygląda świetnie bez Google Fonts w tle.
