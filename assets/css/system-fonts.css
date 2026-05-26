@@ -1,0 +1,17 @@
+/* System fonts – replaces Google Fonts (Source Sans Pro / Lato) */
+:root {
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: "SF Mono", "Menlo", "Monaco", "Consolas",
+    "Liberation Mono", monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+code, pre, kbd, samp,
+figure.highlight, .highlight,
+.rouge-table {
+  font-family: var(--font-mono);
+}
