@@ -1,0 +1,30 @@
+# _data/origin/cors.yml
+# Nadpisuje gem – utrzymuj aktualne wersje CDN razem z aktualizacjami gema.
+
+# ↓↓↓ JEDYNA ZMIANA – zamiast Google Fonts, lokalny stub CSS ↓↓↓
+webfonts: /assets/css/system-fonts.css
+
+# CDN dla pozostałych zależności – nie zmieniaj bez potrzeby
+fontawesome:
+  css: https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css
+
+toc:
+  css: https://cdn.jsdelivr.net/npm/tocbot@4.25.0/dist/tocbot.min.css
+
+lazy-polyfill:
+  js: https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.js
+
+glightbox:
+  css: https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css
+  js: https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js
+
+mermaid:
+  js: https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs
+
+# Resource hints – celowo bez wpisów dla fonts.googleapis.com i fonts.gstatic.com
+# (przeglądarka nie będzie nawet próbować preconnectu do Google Fonts)
+resource_hints:
+  - url: https://cdn.jsdelivr.net
+    links:
+      - rel: preconnect
+      - rel: dns-prefetch
