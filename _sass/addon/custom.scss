@@ -1,5 +1,9 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+:root {
+  --font-family-main: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body, html {
+  font-family: var(--font-family-main) !important;
 }
 
 code, pre, figure.highlight, .highlight * {
