@@ -5,51 +5,16 @@ icon: "fas fa-tv"
 order: 2
 ---
 
-<style>
-.device-grid {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 1.2rem;
-  margin-top: 1.5rem;
-}
-.device-card {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center;
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
-  padding: 1.2rem;
-  text-decoration: none !important;
-  color: inherit !important;
-}
-.device-card img {
-  height: 64px;
-  width: auto;
-  object-fit: contain;
-  margin-bottom: .6rem;
-  display: block;
-}
-.device-card strong { display: block; }
-.device-card span {
-  font-size: .82rem;
-  opacity: .65;
-  margin-top: .25rem;
-  display: block;
-}
-</style>
-
 {::nomarkdown}
-<div class="device-grid">
-  <a href="/devices/iphone-5c" class="device-card">
-    <img src="/assets/img/iphone.png" alt="iPhone 5c">
-    <strong>iPhone 5c</strong>
-    <span>iOS · 2013</span>
-  </a>
-  <a href="/devices/xbox-360" class="device-card">
-    <img src="/assets/img/xbox.png" alt="Xbox 360">
-    <strong>Xbox 360</strong>
-    <span>Console · 2005</span>
-  </a>
+<style>
+.dg { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.dc { display: block; border: 1px solid var(--border-color); border-radius: 8px; padding: 1rem 0.8rem; text-decoration: none; color: inherit; text-align: center; }
+.dc img { display: block; height: 56px; width: auto; margin: 0 auto 0.6rem; object-fit: contain; }
+.dc b { display: block; font-size: 0.95rem; }
+.dc small { display: block; opacity: 0.6; font-size: 0.8rem; margin-top: 0.2rem; }
+</style>
+<div class="dg">
+<a href="/devices/iphone-5c" class="dc"><img src="/assets/img/iphone.png" alt="iPhone 5c"><b>iPhone 5c</b><small>iOS · 2013</small></a>
+<a href="/devices/xbox-360" class="dc"><img src="/assets/img/xbox.png" alt="Xbox 360"><b>Xbox 360</b><small>Console · 2005</small></a>
 </div>
 {:/nomarkdown}
