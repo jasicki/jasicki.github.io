@@ -25,6 +25,13 @@ order: 2
     color: inherit !important;
     text-align: center !important;
   }
+  .device-card-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
   .device-card img {
     display: block !important;
     width: 65px !important;
@@ -46,15 +53,19 @@ order: 2
   }
 </style>
 
-<div class="device-grid">
+<div class="device-grid" markdown="0">
   <a href="/devices/iphone-5c" class="device-card">
-    <img src="{{ '/assets/img/iphone.png' | relative_url }}" alt="iPhone 5c">
-    <span class="dc-name">iPhone 5c</span>
-    <span class="dc-meta">iOS · 2013</span>
+    <div class="device-card-content">
+      <img src="{{ '/assets/img/iphone.png' | relative_url }}" alt="iPhone 5c">
+      <span class="dc-name">iPhone 5c</span>
+      <span class="dc-meta">iOS · 2013</span>
+    </div>
   </a>
   <a href="/devices/xbox-360" class="device-card">
-    <img src="{{ '/assets/img/xbox.png' | relative_url }}" alt="Xbox 360">
-    <span class="dc-name">Xbox 360</span>
-    <span class="dc-meta">Console · 2005</span>
+    <div class="device-card-content">
+      <img src="{{ '/assets/img/xbox.png' | relative_url }}" alt="Xbox 360">
+      <span class="dc-name">Xbox 360</span>
+      <span class="dc-meta">Console · 2005</span>
+    </div>
   </a>
 </div>
