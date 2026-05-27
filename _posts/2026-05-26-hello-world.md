@@ -1,13 +1,13 @@
 ---
-title: "Hello World – pierwszy post"
+title: "Downgrading iPhone X to iOS 14.3"
 date: 2026-05-26 12:00:00 +0200
 ---
 
-To jest testowy post sprawdzający wygląd czcionek, bloków kodu i tabel. Jeśli wszystko gra – San Francisco na macOS wygląda świetnie bez Google Fonts w tle.
+A guide for tether downgrading the iPhone X from latest iOS 16.7.16 to iOS 14.3 or other supported
 
-## Nagłówek H2
+## Disclaimer
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Chirpy renderuje treść postów przez standardowy pipeline Jekyllowy – Markdown → HTML, z podświetlaniem składni przez Rouge.
+I am not responsible for bricking your devices caused by following this guide. Please proceed with caution and at your own risk.
 
 ### Przykład kodu – Python
 
