@@ -12,7 +12,7 @@ order: 2
     gap: 1.2rem !important;
     margin-top: 1.5rem !important;
   }
-  .device-card {
+  a.device-card {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
@@ -24,6 +24,15 @@ order: 2
     text-decoration: none !important;
     color: inherit !important;
     text-align: center !important;
+    /* Zabezpieczenia przed ingerencją motywu */
+    background: transparent !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+  }
+  /* Usuwa ukryte ikony linków dodawane przez Chirpy */
+  a.device-card::after, a.device-card::before {
+    display: none !important;
+    content: none !important;
   }
   .device-card-content {
     display: flex !important;
@@ -31,11 +40,14 @@ order: 2
     align-items: center !important;
     justify-content: center !important;
     width: 100% !important;
+    height: 100% !important;
+    /* Sprawia, że kliknięcie "przelatuje" przez tekst/obrazek prosto w główny przycisk */
+    pointer-events: none !important; 
   }
   .device-card img {
     display: block !important;
-    width: 65px !important;
-    height: 65px !important;
+    width: 50px !important;  /* Pomniejszone z 65px */
+    height: 50px !important; /* Pomniejszone z 65px */
     object-fit: contain !important;
     margin: 0 0 0.8rem 0 !important;
   }
@@ -67,5 +79,7 @@ order: 2
       <span class="dc-name">Xbox 360</span>
       <span class="dc-meta">Console · 2005</span>
     </div>
+  </a>
+</div>    </div>
   </a>
 </div>
