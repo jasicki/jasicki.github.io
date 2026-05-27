@@ -1,41 +1,42 @@
 div.device-grid {
   display: grid !important;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
-  gap: 1rem !important;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  gap: 1.2rem !important;
   margin-top: 1.5rem !important;
 }
 
 a.device-card {
-  display: grid !important;
-  grid-template-rows: 80px auto auto !important;
-  justify-items: center !important;
-  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  aspect-ratio: 1 / 1 !important;
   border: 1px solid var(--border-color) !important;
   border-radius: 8px !important;
-  padding: 1rem 0.8rem !important;
+  padding: 1rem !important;
   text-decoration: none !important;
   color: inherit !important;
-  row-gap: 0.3rem !important;
+  text-align: center !important;
 }
 
 a.device-card img {
   display: block !important;
-  float: none !important;
-  width: 72px !important;
-  height: 72px !important;
+  width: 65px !important;
+  height: 65px !important;
   object-fit: contain !important;
-  align-self: center !important;
-  margin: 0 !important;
+  margin: 0 0 0.8rem 0 !important;
 }
 
 a.device-card .dc-name {
   display: block !important;
   font-weight: 600 !important;
-  font-size: 0.9rem !important;
+  font-size: 0.95rem !important;
+  margin-bottom: 0.2rem !important;
+  line-height: 1.2 !important;
 }
 
 a.device-card .dc-meta {
   display: block !important;
   opacity: 0.6 !important;
-  font-size: 0.78rem !important;
+  font-size: 0.8rem !important;
 }
