@@ -5,6 +5,9 @@ icon: "fas fa-tv"
 order: 2
 ---
 
+<!-- Niewidzialny znacznik zapobiegający psuciu układu przez kompilator Markdown -->
+<span style="display: none;"></span>
+
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.2rem; margin-top: 1.5rem;">
 
   <a href="/devices/iphone-5c" style="display: block; border: 1px solid var(--border-color); border-radius: 8px; padding: 1.2rem; text-decoration: none; color: inherit; transition: box-shadow .2s;">
