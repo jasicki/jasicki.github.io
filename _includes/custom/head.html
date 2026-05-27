@@ -1,8 +1,58 @@
-<!-- Systemowe zmienne CSS jako fallback dla starszych przeglądarek -->
 <style>
   :root {
-    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text",
-      "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-mono: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    --font-mono: "SF Mono", "Menlo", "Monaco", "Consolas", monospace !important;
+  }
+
+  body, html, p, h1, h2, h3, h4, h5, h6, a, li, span, div {
+    font-family: var(--font-sans) !important;
+  }
+
+  code, pre, figure.highlight, .highlight *, .rouge-table * {
+    font-family: var(--font-mono) !important;
+  }
+
+  /* Style dla układu Devices */
+  div.device-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+    gap: 1.2rem !important;
+    margin-top: 1.5rem !important;
+  }
+
+  a.device-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    aspect-ratio: 1 / 1 !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px !important;
+    padding: 1rem !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    text-align: center !important;
+  }
+
+  a.device-card img {
+    display: block !important;
+    width: 65px !important;
+    height: 65px !important;
+    object-fit: contain !important;
+    margin: 0 0 0.8rem 0 !important;
+  }
+
+  a.device-card .dc-name {
+    display: block !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    margin-bottom: 0.2rem !important;
+    line-height: 1.2 !important;
+  }
+
+  a.device-card .dc-meta {
+    display: block !important;
+    opacity: 0.6 !important;
+    font-size: 0.8rem !important;
   }
 </style>
