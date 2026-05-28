@@ -24,12 +24,10 @@ order: 2
     text-decoration: none !important;
     color: inherit !important;
     text-align: center !important;
-    /* Zabezpieczenia przed ingerencją motywu */
     background: transparent !important;
     margin: 0 !important;
     box-shadow: none !important;
   }
-  /* Usuwa ukryte ikony linków dodawane przez Chirpy */
   a.device-card::after, a.device-card::before {
     display: none !important;
     content: none !important;
@@ -41,14 +39,14 @@ order: 2
     justify-content: center !important;
     width: 100% !important;
     height: 100% !important;
-    /* Sprawia, że kliknięcie "przelatuje" przez tekst/obrazek prosto w główny przycisk */
     pointer-events: none !important; 
   }
-  .device-card img {
-    display: block !important;
-    width: 50px !important;  /* Pomniejszone z 65px */
-    height: 50px !important; /* Pomniejszone z 65px */
-    object-fit: contain !important;
+  .device-img {
+    width: 50px !important;
+    height: 50px !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
     margin: 0 0 0.8rem 0 !important;
   }
   .device-card .dc-name {
@@ -68,18 +66,16 @@ order: 2
 <div class="device-grid" markdown="0">
   <a href="/devices/iphone-5c" class="device-card">
     <div class="device-card-content">
-      <img src="{{ '/assets/img/iphone.png' | relative_url }}" alt="iPhone 5c">
+      <div class="device-img" style="background-image: url('{{ '/assets/img/iphone.png' | relative_url }}');"></div>
       <span class="dc-name">iPhone 5c</span>
       <span class="dc-meta">iOS · 2013</span>
     </div>
   </a>
   <a href="/devices/xbox-360" class="device-card">
     <div class="device-card-content">
-      <img src="{{ '/assets/img/xbox.png' | relative_url }}" alt="Xbox 360">
+      <div class="device-img" style="background-image: url('{{ '/assets/img/xbox.png' | relative_url }}');"></div>
       <span class="dc-name">Xbox 360</span>
       <span class="dc-meta">Console · 2005</span>
     </div>
-  </a>
-</div>    </div>
   </a>
 </div>
