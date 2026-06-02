@@ -68,6 +68,7 @@ I am not responsible for bricking your devices caused by following this guide. P
 This may take a while.
 
 3. Now device should enter recovery mode.
+
 ## Tethered Booting
 
 Since this is a tethered downgrade, your device will not boot on its own. You must use your computer to boot it every time it restarts.
@@ -78,6 +79,7 @@ Since this is a tethered downgrade, your device will not boot on its own. You mu
    ./surrealra1n.sh --boot 14.3
    ```
 3. Your iPhone X should now boot into iOS 14.3.
+
 ## Bypassing activation error
 
 blablabla bedzie pozniej
