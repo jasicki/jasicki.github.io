@@ -11,16 +11,19 @@ I am not responsible for bricking your devices caused by following this guide. P
 
 ## Credits
 
-* [Kaiden](https://kaiden.cc/posts/downgrading-the-iphone-5c-to-ios-6/) - For the original structure and inspiration for this tethered downgrade guide.
+* [pwnerblu](https://github.com/pwnerblu/surrealra1n/commits?author=pwnerblu) - For the surrealra1n script.
 * [checkm8 exploit](https://github.com/axi0mX/ipwndfu) - For the bootrom vulnerability.
-* [Tool Creator](https://github.com/example) - For the specific tethered boot utilities used in this guide.
+* [libimobiledevice](https://github.com/libimobiledevice) - For irecovery.
+* [LukeZGD](https://github.com/LukeZGD) - For Legacy iOS Kit
 
 ## Requirements
 
 * A Mac running macOS.
-* A Lightning to USB-A cable (USB-C cables may cause issues entering DFU mode).
-* Target IPSW file for iOS 14.3.
+* A Lightning to USB-A cable (USB-C also works but more trouble with entering DFU).
+* [iOS 14.3 ipsw](https://updates.cdn-apple.com/2020WinterFCS/fullrestores/001-87865/458334F5-D8E1-498A-A9FD-08BBD20FE007/iPhone10,3,iPhone10,6_14.3_18C66_Restore.ipsw) file as your target system and latest signed iOS 16.x.x ipsw
 * Homebrew installed on your Mac.
+* [SSHRD Script](https://github.com/verygenericname/SSHRD_Script) for SSH ramdisk to bypass activation error.
+* _alternative for ssh_ [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit)
 
 ## Preparation
 
