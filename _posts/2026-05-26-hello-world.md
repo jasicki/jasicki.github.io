@@ -3,7 +3,9 @@ title: "Downgrading iPhone X to iOS 14.3"
 ---
 A guide for tether downgrading the iPhone X from latest iOS 16.7.16 to iOS 14.3 or other supported
 
+---
 date: 2026-05-27 12:00:00 +0200
+---
 
 ## Disclaimer
 
