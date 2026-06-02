@@ -20,6 +20,7 @@ I am not responsible for bricking your devices caused by following this guide. P
 * A Mac running macOS.
 * A Lightning to USB-A cable (USB-C also works but more trouble with entering DFU).
 * [iOS 14.3 ipsw](https://updates.cdn-apple.com/2020WinterFCS/fullrestores/001-87865/458334F5-D8E1-498A-A9FD-08BBD20FE007/iPhone10,3,iPhone10,6_14.3_18C66_Restore.ipsw) file as your target system and latest signed iOS 16.x.x ipsw
+(_You can get these from [The Apple Wiki](https://theapplewiki.com/wiki/Firmware)_)
 * Homebrew installed on your Mac.
 * [SSHRD Script](https://github.com/verygenericname/SSHRD_Script) for SSH ramdisk to bypass activation error.
 * _alternative for ssh_ [Legacy iOS Kit](https://github.com/LukeZGD/Legacy-iOS-Kit)
