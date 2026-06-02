@@ -39,7 +39,7 @@ I am not responsible for bricking your devices caused by following this guide. P
    git clone https://github.com/pwnerblu/surrealra1n.git
    cd surrealra1n
    ```
-3. Set permissions for ([surrealra1n])
+3. Set permissions for `surreara1n`
 ```bash
    chmod +x surrealra1n.sh
    ```
