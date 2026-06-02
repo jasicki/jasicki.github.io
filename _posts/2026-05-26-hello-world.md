@@ -26,12 +26,15 @@ I am not responsible for bricking your devices caused by following this guide. P
 
 1. Open Terminal and install dependencies:
 ```bash
-   brew install libimobiledevice irecovery
+   xcode-select --install
+   brew install libimobiledevice
+   brew install libirecovery
+   brew install binutils
    ```
-2. Download the required downgrade script repository:
+2. Download the required downgrade script repository ([pwnerblu/surrealra1n](https://github.com/pwnerblu/surrealra1n)):
 ```bash
-   git clone [https://github.com/example/downgrade-tool.git](https://github.com/example/downgrade-tool.git)
-   cd downgrade-tool
+   git clone https://github.com/pwnerblu/surrealra1n.git
+   cd surrealra1n
    ```
 
 ## Creating the Custom IPSW
