@@ -133,8 +133,4 @@ assets:
 
 W terminalu możesz użyć `bundle exec jekyll serve --livereload` żeby oglądać zmiany na żywo. Plik konfiguracyjny to `_config.yml`, a posty lądują w katalogu `_posts/`.
 
-## Blockquote
-
-> Dobry blog techniczny to nie kwestia platformy – to kwestia regularności i jakości treści.
-
-To tyle na ten moment. Reszta postów pojawi się wkrótce.
+Done!
