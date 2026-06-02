@@ -66,6 +66,7 @@ I am not responsible for bricking your devices caused by following this guide. P
    ./surrealra1n.sh --restore 14.3
    ```
 This may take a while.
+
 3. Now device should enter recovery mode.
 ## Tethered Booting
 
