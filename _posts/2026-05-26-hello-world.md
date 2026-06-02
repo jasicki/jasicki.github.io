@@ -58,27 +58,27 @@ I am not responsible for bricking your devices caused by following this guide. P
    * Press and quickly release Volume Up.
    * Press and quickly release Volume Down.
    * Press and hold the Side button until the screen goes black.
-   * Hold both the Side button and Volume Down for 5 seconds.
-   * Release the Side button but keep holding Volume Down for another 10 seconds.
-2. Run the checkm8 exploit to place the device into Pwned DFU state:
-```bash
-   ./ipwndfu -p
-   ```
-3. Flash the custom IPSW using the restore script:
-```bash
-   ./restore.sh custom_iPhone10,6_14.3_18C66_Restore.ipsw
-   ```
+   * When goes black release all buttons and imeditialy quickly press volume down and Side button for 3 seconds.
+   * Release the Side button but keep holding Volume Down for another 10 seconds and PC recognization.
 
+2. Flash the custom IPSW using the restore script:
+```bash
+   ./surrealra1n.sh --restore 14.3
+   ```
+3. Now device should enter recovery mode.
 ## Tethered Booting
 
 Since this is a tethered downgrade, your device will not boot on its own. You must use your computer to boot it every time it restarts.
 
-1. Put the device back into DFU mode.
+1. Put the device back into DFU mode as mentioned.
 2. Run the boot script:
 ```bash
-   ./boot.sh
+   ./surrealra1n.sh --boot 14.3
    ```
 3. Your iPhone X should now boot into iOS 14.3.
+## Bypassing activation error
+
+blablabla bedzie pozniej
 
 ### Przykład kodu – Python
 
