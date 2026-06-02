@@ -49,7 +49,7 @@ I am not responsible for bricking your devices caused by following this guide. P
 1. Move your downloaded iOS 14.3 IPSW into the `surrealra1n` folder.
 2. Run the script. This will create a custom restore ramdisk with patched ASR and ipsw:
 ```bash
-   ./surrealra1n.sh --make_custom_ipsw iPhone10,6_14.3_18C66_Restore.ipsw [path for latest iOS 16.x.x ipsw] 14.3
+   ./surrealra1n.sh --make_custom_ipsw iPhone10,6_14.3_18C66_Restore.ipsw [latest iOS 16 IPSW] 14.3
    ```
 
 ## Restoring the Device
