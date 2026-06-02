@@ -39,10 +39,14 @@ I am not responsible for bricking your devices caused by following this guide. P
    git clone https://github.com/pwnerblu/surrealra1n.git
    cd surrealra1n
    ```
+3. Set permissions for ([surrealra1n])
+```bash
+   chmod +x surrealra1n.sh
+   ```
 
 ## Creating the Custom IPSW
 
-1. Move your downloaded iOS 14.3 IPSW into the `downgrade-tool` folder.
+1. Move your downloaded iOS 14.3 IPSW into the `surrealra1n` folder.
 2. Run the extraction script. This will extract the `RootFS`, patch `iBSS` and `iBEC`, and repack it into a custom IPSW:
 ```bash
    ./create_custom_ipsw.sh iPhone10,6_14.3_18C66_Restore.ipsw
