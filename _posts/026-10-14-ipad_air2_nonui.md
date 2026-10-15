@@ -1,7 +1,7 @@
 ---
-title: "Downgrading A7 Devices to iOS 7"
+title: "iPad Air 2 nonUI ios 9 internal guide"
 date: 2026-10-14 23:00:00 +0200
-description: "Complete manual guide for tether downgrading A7 devices (iPhone 5s, iPad Air, iPad mini 2) to iOS 7."
+description: "Complete manual guide for tether booting nonUI system on iPad Air 2"
 ---
 
 ## Disclaimer
@@ -10,7 +10,6 @@ I am not responsible for bricking your devices, data loss, or any other damage c
 
 ## Credits
 
-* [iArchive / agricu](https://agricu.github.io/ios7.iarchive.app/) - For the original iOS 7 downgrade guide and documentation.
 * [axi0mX](https://github.com/axi0mX/ipwndfu) - For the checkm8 bootrom exploit.
 * [tihmstar](https://github.com/tihmstar/iBoot64Patcher) - For `iBoot64Patcher`.
 * [mineek](https://github.com/mineek/seprmvr64) - For `seprmvr64` and SEP bypass research.
@@ -20,10 +19,9 @@ I am not responsible for bricking your devices, data loss, or any other damage c
 
 ## 1. Requirements & Prerequisites
 
-* A computer running **macOS** or **Linux**.
-* An A7 device (**iPhone 5s**, **iPad Air 1**, or **iPad mini 2**).
+* A computer running **macOS**.
 * A Lightning to USB-A cable.
-* Target **iOS 7.x IPSW** and an **iOS 8.0 / 10.3.3 IPSW** (for ramdisk/bootloader components) downloaded from [ipsw.me](https://ipsw.me).
+* Target **nonui ios 9 IPSW** and an **iOS 9.0.2 IPSW** (for ramdisk/bootloader components) downloaded from [ipsw.me](https://ipsw.me).
 * Essential command-line tools installed:
   * `ipwndfu` / `gaster`
   * `img4tool` / `image3maker`
