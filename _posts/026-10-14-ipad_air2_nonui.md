@@ -37,10 +37,10 @@ I am not responsible for bricking your devices, data loss, or any other damage c
    ```
 2. Create a working directory for all your downgrade files:
    ```bash
-   mkdir ~/ios7-downgrade
-   cd ~/ios7-downgrade
+   mkdir ~/air2nonui
+   cd ~/air2nonui
    ```
-3. Extract your downloaded target iOS 7 IPSW (which is just a ZIP archive):
+3. Extract your downloaded target iOS 9.0.2 IPSW (which is just a ZIP archive so change .extension name):
    ```bash
    unzip iPhone6,2_7.1.2_11D257_Restore.ipsw -d extracted_ipsw/
    ```
@@ -49,7 +49,7 @@ I am not responsible for bricking your devices, data loss, or any other damage c
 
 ## 2. Preparing & Patching Boot Files
 
-Because we don't have SHSH blobs for iOS 7 and the modern SEP is incompatible with iOS 7, we must decrypt and patch the entire bootchain (`iBSS`, `iBEC`, `devicetree`, and `kernelcache`). Find the Firmware Keys (IV + Key) for your specific device and iOS version on **The Apple Wiki**.
+Decrypt and patch the entire bootchain (`iBSS`, `iBEC`, `devicetree`, and `kernelcache`). Find the Firmware Keys (IV + Key) for your specific device and iOS version on **The Apple Wiki**.
 
 ### Patching iBSS and iBEC
 
@@ -97,14 +97,14 @@ Because we don't have SHSH blobs for iOS 7 and the modern SEP is incompatible wi
 
 ## 3. Booting the SSH Ramdisk
 
-To partition the drive and install HFS+, you need to boot an SSH Ramdisk (preferably an iOS 8 or iOS 9 ramdisk that natively supports `newfs_hfs` and `asr` for HFS+ volumes).
+To partition the drive and install HFS+, you need to boot an SSH Ramdisk (preferably an iOS 11 ramdisk that natively supports `newfs_hfs` and `asr` for HFS+ volumes).
 
 1. Clone and prepare the SSH Ramdisk tool:
    ```bash
    git clone [https://github.com/verygenericname/SSHRD_Script](https://github.com/verygenericname/SSHRD_Script) --recursive
    cd SSHRD_Script
    ```
-2. Put your A7 device into **DFU Mode** and exploit it with `gaster` or `ipwndfu`:
+2. Put your device into **DFU Mode** and exploit it with `gaster` or `ipwndfu`:
    ```bash
    gaster pwn
    gaster reset
