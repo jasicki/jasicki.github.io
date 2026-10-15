@@ -1,5 +1,5 @@
 ---
-title: "iPad Air 2 nonUI ios 9 internal guide"
+title: "iPad Air 2 nonUI iOS 9 internal guide"
 date: 2026-10-14 23:00:00 +0200
 description: "Complete manual guide for tether booting nonUI system on iPad Air 2"
 ---
